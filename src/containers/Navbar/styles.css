@@ -1,0 +1,45 @@
+.navbar {
+    position: relative;
+    z-index: 1;
+    height: 12rem;
+    margin: 0 auto -12rem auto;
+    max-width: 1440px;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 1rem;
+}
+
+.menu-items a {
+    padding-top: 0.75rem;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-items a:hover {
+    color: #ffc004;
+    cursor: pointer;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
