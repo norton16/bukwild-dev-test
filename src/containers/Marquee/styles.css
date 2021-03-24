@@ -1,20 +1,34 @@
+.marquee-background {
+    background-image: url('../../assets/img/slide_one.jpg');
+    background-size: cover;
+    /* height: 100vh; */
+    min-height: 100vh;
+    position: relative;
+    z-index: -1;
+}
 .marquee {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../../assets/img/slide_one.jpg');
-    background-size: cover;
     height: max-content;
     min-height: 100vh;
     color: white;
-    position: relative;
-    z-index: -1;
 }
 
 .marquee-content {
-    margin-top: 20rem;
-    margin-left: 1.45rem;
-    margin-right: 1.45rem;
+    width: 100%;
     max-width: 1440px;
+    width: available;
+}
+
+.heading-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.headline {
+    font-size: 5rem;
 }

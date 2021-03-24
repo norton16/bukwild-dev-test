@@ -1,22 +1,32 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import { Container, Grid } from '@material-ui/core';
-import { Menu, Contact } from '../../components';
+import { Contact } from '../../components';
 import  Marquee from '../Marquee/Marquee';
 import './styles.css'
 
-const Navbar = ({ data }) => {
+const Navbar = ({ content }) => {
+
+const [marqueeContent, setMarqueeContent] = useState(content.pages[0]);
+
+    const handleMarqueeUpdate = (index) => {
+        setMarqueeContent(content.pages[index]);
+        console.log(marqueeContent);
+    }
+
     return (
-        <div className="navbar-wrapper">
+        <>  
             <Container maxWidth="xl">
-            <div className="navbar">
+                <div className="navbar">
                     <Grid container justify="center">
                         <Grid item xs={6} sm={6} md={6} lg={6}>
                             <div className="menu-wrapper">
                                 <div className="menu">
                                     <img src={require('../../assets/img/abc_logo.svg').default} alt='logo' />
                                     <div className="menu-items">
-                                        {data.pages.map((menuItem) => (
-                                            <a>{ menuItem.title }</a>
+                                        {content.pages.map((menuItem, index) => (
+                                            <a key={index} onClick={() => handleMarqueeUpdate(index)}>
+                                                { menuItem.title }
+                                            </a>
                                         ))}
                                     </div>
                                 </div>
@@ -27,11 +37,11 @@ const Navbar = ({ data }) => {
                                 <Contact />
                             </div>    
                         </Grid>
-                    </Grid>
-            </div>
+                    </Grid>        
+                </div>
             </Container>
-            <Marquee />
-        </div>
+            <Marquee marqueeContent={marqueeContent}/>
+        </>
     )
 }
 
