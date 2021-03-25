@@ -1,11 +1,16 @@
 .marquee-background {
-    background-image: url('../../assets/img/slide_one.jpg');
+    background-color: #000000;
     background-size: cover;
-    /* height: 100vh; */
+    background-attachment: fixed;
     min-height: 100vh;
     position: relative;
     z-index: -1;
+    margin: 0 auto;
+    transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
 }
+
 .marquee {
     display: flex;
     flex-direction: column;
@@ -13,10 +18,11 @@
     align-items: center;
     height: max-content;
     min-height: 100vh;
-    color: white;
+    color: #ffffff;
 }
 
 .marquee-content {
+    margin-top: calc(9em);
     width: 100%;
     max-width: 1440px;
     width: available;
@@ -30,5 +36,10 @@
 }
 
 .headline {
-    font-size: 5rem;
+    font-size: calc(3em);
+    font-weight: bold;
+}
+
+.subhead {
+    line-height: 1.625rem;
 }

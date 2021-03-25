@@ -13,12 +13,16 @@
 
 .menu {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 1.5rem 0rem;
     color: #ffffff;
     font-weight: bold;
+}
+
+.menu img:hover {
+    cursor: pointer;
 }
 
 .menu-items {
@@ -26,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
 .menu-items a {

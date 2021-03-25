@@ -1,7 +1,31 @@
 .cta {
+    display: flex;
+    align-items: center;
     background: #ffffff;
     color: #000000;
-    height: 12rem;
+    height: 10rem;
     max-width: 1440px;
-    margin: auto;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.cta p {
+    margin: calc(0.5rem);
+}
+
+.cta-content-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: calc(1.5em);
+    font-weight: bold;
+}
+
+.cta-content-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
 }

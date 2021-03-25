@@ -1,16 +1,14 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState } from 'react'
 import { Container, Grid } from '@material-ui/core';
 import { Contact } from '../../components';
 import  Marquee from '../Marquee/Marquee';
 import './styles.css'
 
 const Navbar = ({ content }) => {
-
-const [marqueeContent, setMarqueeContent] = useState(content.pages[0]);
+    const [marqueeContent, setMarqueeContent] = useState(content.pages[0]);
 
     const handleMarqueeUpdate = (index) => {
         setMarqueeContent(content.pages[index]);
-        console.log(marqueeContent);
     }
 
     return (
@@ -39,8 +37,8 @@ const [marqueeContent, setMarqueeContent] = useState(content.pages[0]);
                         </Grid>
                     </Grid>        
                 </div>
-            </Container>
-            <Marquee marqueeContent={marqueeContent}/>
+            </Container>  
+            <Marquee marqueeContent={marqueeContent} />
         </>
     )
 }
