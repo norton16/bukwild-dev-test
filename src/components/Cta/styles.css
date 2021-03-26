@@ -9,7 +9,8 @@
     width: 100%;
 }
 
-.cta p {
+.cta p, 
+.cta a {
     margin: calc(0.5rem);
 }
 
@@ -19,12 +20,19 @@
     align-items: center;
     font-size: calc(1.5em);
     font-weight: bold;
+    word-break: break-word;
 }
 
 .cta-content-right {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-content-right a {
     font-size: 0.75em;
     font-weight: bold;
     text-transform: uppercase;

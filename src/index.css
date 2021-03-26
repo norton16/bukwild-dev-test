@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in-visible {
+  transition: opacity 0.75s ease-in;
+  -moz-transition: opacity 0.75s ease-in;
+  -webkit-transition: opacity 0.75s ease-in;
+  opacity: 1;
+}

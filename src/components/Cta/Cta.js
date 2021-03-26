@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core'
 import './styles.css'
 
 const Cta = ({ marqueeContent }) => {
@@ -15,7 +15,7 @@ const Cta = ({ marqueeContent }) => {
                 <Grid item lg={1} />
                 <Grid item xs={12} sm={12} md={12} lg={6}>
                     <div className="cta-content-right">
-                        <p>let's talk.</p>
+                        <a>let's talk.</a>
                         <img src={require('../../assets/img/right-arrow.png').default} alt='right-arrow' />
                     </div>
                 </Grid> 

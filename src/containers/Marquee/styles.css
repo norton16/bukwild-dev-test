@@ -1,5 +1,11 @@
+.background-fade {
+    transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -webkit-transition: opacity 0.4s ease-in;
+}
+
 .marquee-background {
-    background-color: #000000;
+    background-color: #1d1c1c;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -9,6 +15,9 @@
     transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
+    transition-delay: 0.05s;
+    -moz-transition-delay: 0.05s;
+    -webkit-transition-delay: 0.05s;
 }
 
 .marquee {
@@ -33,10 +42,11 @@
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    word-break: break-word;
 }
 
 .headline {
-    font-size: calc(3em);
+    font-size: calc(3.5em);
     font-weight: bold;
 }
 
