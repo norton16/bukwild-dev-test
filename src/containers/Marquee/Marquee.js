@@ -20,19 +20,19 @@ const Marquee = ({ marqueeContent }) => {
 
     return (
         <div className={`fade-in ${backgroundDelay && 'fade-in-visible'} background-fade`}>
-            <div className="marquee-background" style={{ backgroundImage:`url(${slide})` }}>
+            <div className="marquee-background" style={{ backgroundImage: `url(${slide})` }}>
                 <Container maxWidth="xl">
                     <div className={`marquee fade-in ${marqueeDelay && 'fade-in-visible'}`}>
                         <div></div>
                         <div className="marquee-content">
                             <Grid container justify="center">
                                 {/* Header text */}
-                                <Grid item xs={12} sm={12} md={12} lg={4}>
+                                <Grid item xs={12} sm={12} md={12} lg={5}>
                                     <div className="heading-wrapper">
                                         <p className="headline">{marqueeContent.blocks[0].headline}</p>
                                     </div>
                                 </Grid>
-                                <Grid item lg={2} />
+                                <Grid item lg={1} />
                                 {/* Subhead text */}
                                 <Grid item xs={12} sm={12} md={12} lg={4}>
                                     <div className="heading-wrapper">

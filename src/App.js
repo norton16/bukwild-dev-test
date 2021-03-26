@@ -3,7 +3,6 @@ import { Navbar } from './containers'
 import { content } from './assets/json/content'
 
 const App = () => {
-
   return (
     <div className="App">
       {/* JSON data is passed to the Navbar UI layer first */}
